@@ -1,0 +1,457 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    width: auto;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.mainpage {
+    background-image: url(../assets/Portada\ Principal.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.jo {
+    background-image: url(../assets/JO.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 95%;
+}
+
+.juicios {
+    background-image: url(..//assets/Juicios.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.aboutus {
+    background-image: url(..//assets/sobre\ nosotros.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0%;
+    padding: 1rem;
+    background-color: #3a3a3a;
+    color: white;
+    font-size: 1rem;
+}
+
+.encabezado p {
+    margin: 0;
+    padding-right: 16.5rem;
+    padding-left: 8.5rem;
+}
+
+.barraprincipal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.barraprincipal img {
+    height: 9rem;
+    margin: 0;
+}
+
+.barraprincipal .name {
+    margin: 0;
+    padding-right: 30rem;
+    display:flex;
+}
+
+.barraprincipal .mainnav {
+    margin: 0;
+    align-self: center;
+    width: 42rem;
+    padding-right: 8rem;
+}
+
+.mainnav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mainnav ul li {
+    padding-right: 3rem;
+}
+
+.mainnav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.barraprincipal .bonification {
+    margin: 0;
+    align-self: center;
+    color:white;
+}
+
+.name .titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    bottom: 0%;
+    width: 100%;
+    padding: 1rem;
+    background-color: #3a3a3a;
+    color: white;
+    font-size: 1rem;
+}
+
+.f1 {
+    padding-right : 51rem;
+}
+
+.f2 {
+    padding-right: 8rem;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+    text-shadow: 0 0 5px black;
+}
+
+.tlf {
+    color: orangered;
+}
+
+.bonificationbox {
+    background-color: orangered;
+    padding: 0.7rem;
+}
+
+.contacto {
+    background-color: black;
+}
+
+iframe {
+    width: 100%;
+    height: 10%;
+}
+
+.trialsbox {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "izquierda derecha" 
+    ;
+
+}
+
+.leftjuicios {
+    grid-area: izquierda;    
+}
+
+.rightjuicios {
+    grid-area: derecha;
+}
+
+.members {
+    display: flex;
+    color: orangered;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.trialstext p {
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    padding-top: 5rem;
+
+}
+
+.trialstext {
+    width: 80%;
+
+}
+
+.boss {
+    color: orangered;
+    text-align: center;
+}
+
+.jobox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "izquierda derecha"
+    ;
+    color:white;
+}
+
+.joleft {
+    grid-area: izquierda;
+    padding-top: 6rem;
+    width: 80%;
+}
+
+.joleft h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 3.5rem;
+}
+
+.joleft p {
+    text-align : center;
+    font-size : 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.joright {
+    grid-area: derecha;
+    padding-top: 7rem;
+    width: 80%;
+}
+
+.joright h3 {
+    text-align: center;
+    font-size : 2rem;
+    padding-bottom: 3.5rem;
+}
+
+.joright ul {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 7rem;
+}
+
+.joright p {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.jowarning {
+    width: 100%;
+}
+
+.jowarning p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: orangered;
+    padding-top: 10rem;
+    padding-bottom: 7.5rem;
+    width: 50%;
+}
+
+.contactgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "izquierda derecha"
+    ;
+}
+
+.contactform {
+    width: 80%;
+}
+
+.contactdatos {
+    width: 80%;
+}
+
+.contactcontain {
+    margin: 2rem;
+}
+
+.contactcontain h1 {
+    font-size: 2rem;
+    padding: 0.8rem;
+}
+
+.contactcontain p {
+    font-size: 2rem;
+    padding: 0.8rem;    
+}
+
+.contact1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact2 div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+input {
+    padding: 0.4rem;
+    width: 25rem;
+}
+
+.contact3 {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 85%;
+}
+
+.contact4 {
+    display: flex;    
+    flex-direction: row;
+    justify-content: start;
+}
+
+.contact4 input {
+    width: 1rem;
+    margin: 0 50px;
+}
+
+.contact4 label {
+    margin: 0;
+
+}
+
+.contactfooter {
+    position: fixed;
+    bottom: 0%;
+}
+
+.maingrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "izquierda derecha"
+    ;
+}
+
+.mainleft {
+    grid-area: izquierda;
+    padding-left: 3rem;
+    padding-top: 5rem;
+    
+}
+
+.mainright {
+    grid-area: derecha;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    margin-right: 25%;
+    padding-top: 10rem;
+    color: white;
+}
+
+.mainwarning {
+    padding-top: 5rem;
+    color: orangered;
+}
+
+.mainright h2 {
+    padding-bottom: 4rem;
+}
+
+/* MOBILE */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    P {
+        color: red;
+    }
+
+    .mainright {
+        color: red;
+    }
+
+    .mainwarning a {
+        color: orangered;
+    }
+
+    .mainnav a {
+        color: red;
+    }
+
+    .mainnav ul li {
+        padding: 0.5rem;
+    }
+
+    .barraprincipal {
+        padding-left: 2rem;
+    }
+
+    .trialsbox {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "derecha"
+        "izquierda" 
+        ;
+    }
+    
+    .barraprincipal .name {
+        padding-bottom: 2rem;
+        padding-right: 5rem;
+    }
+
+    .f1 {
+        padding-right: 2rem;
+    }
+
+    .mainleft {
+        grid-area: izquierda;
+        padding-left: 8rem;
+        padding-top: 20rem;
+        
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .trialsbox {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "derecha"
+        "izquierda" 
+        ;
+    }
+}
+
+/* desktop */
