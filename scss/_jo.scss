@@ -1,0 +1,62 @@
+.jo {
+    background-image: url(../assets/JO.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.jobox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "izquierda derecha"
+    ;
+    color:white;
+    .joleft {
+        grid-area: izquierda;
+        padding-top: 6rem;
+        width: 80%;
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            padding-bottom: 3.5rem;
+        }
+        p {
+            text-align : center;
+            font-size : 1.5rem;
+            padding-bottom: 3rem;
+        }
+    }
+    .joright {
+        grid-area: derecha;
+        padding-top: 7rem;
+        width: 80%;
+        h3 {
+            text-align: center;
+            font-size : 2rem;
+            padding-bottom: 3.5rem;
+        }
+        ul {
+            text-align: center;
+            font-size: 1.5rem;
+            padding-bottom: 7rem;
+        }
+        p {
+            text-align: center;
+            font-size: 2rem;
+            color: white;
+            padding-bottom: 1rem;
+        }
+    }
+}
+.jowarning p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: orangered;
+    padding-top: 10rem;
+    padding-bottom: 7.5rem;
+    width: 50%;
+}

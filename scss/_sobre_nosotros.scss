@@ -1,0 +1,44 @@
+.aboutus {
+    background-image: url(..//assets/sobre\ nosotros.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.trialsbox {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "izquierda derecha" 
+    ;
+    .leftjuicios {
+        grid-area: izquierda;    
+    }
+        .trialstext {
+            width: 100%;
+        }    
+        .trialstext p {
+            justify-content: center;
+            text-align: center;
+            font-size: 1.5rem;
+            color: white;
+            padding-top: 5rem;
+        }
+    .rightjuicios {
+        grid-area: derecha;
+        .boss {
+            padding-top: 8rem;
+            color: orangered;
+            text-align: center;
+        }
+    }
+        .members {
+            display: flex;
+            color: orangered;
+            text-align: center;
+            margin-top: 3rem;
+        }    
+}

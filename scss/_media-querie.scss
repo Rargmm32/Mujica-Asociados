@@ -1,0 +1,65 @@
+/* MOBILE */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    P {
+        color: red;
+    }
+
+    .mainright {
+        color: red;
+    }
+
+    .mainwarning a {
+        color: orangered;
+    }
+
+    .mainnav a {
+        color: red;
+    }
+
+    .mainnav ul li {
+        padding: 0.5rem;
+    }
+
+    .barraprincipal {
+        padding-left: 2rem;
+    }
+
+    .trialsbox {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "derecha"
+        "izquierda" 
+        ;
+    }
+    
+    .barraprincipal .name {
+        padding-bottom: 2rem;
+        padding-right: 5rem;
+    }
+
+    .f1 {
+        padding-right: 2rem;
+    }
+
+    .mainleft {
+        grid-area: izquierda;
+        padding-left: 8rem;
+        padding-top: 20rem;
+        
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .trialsbox {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "derecha"
+        "izquierda" 
+        ;
+    }
+}
