@@ -9,11 +9,6 @@
 
 .trialsbox {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "izquierda derecha" 
-    ;
     .leftjuicios {
         grid-area: izquierda;    
     }
@@ -30,6 +25,9 @@
     .rightjuicios {
         grid-area: derecha;
         .boss {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             padding-top: 8rem;
             color: orangered;
             text-align: center;

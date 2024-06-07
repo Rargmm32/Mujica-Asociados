@@ -1,65 +1,317 @@
-/* MOBILE */
-
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    P {
-        color: red;
+    .mainpage {
+        .maingrid {
+            display: grid;
+            margin-top: 3rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "izquierda"
+                "derecha"
+            ;
+
+            .mainleft {
+                .carousel-item {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .mainright {
+                margin-top: 3rem;
+                padding: 0;
+            }
+        }
     }
 
-    .mainright {
-        color: red;
-    }
-
-    .mainwarning a {
-        color: orangered;
-    }
-
-    .mainnav a {
-        color: red;
-    }
-
-    .mainnav ul li {
-        padding: 0.5rem;
+    .encabezado {
+        .encabezadocontent {
+            width: 100%;
+        }
     }
 
     .barraprincipal {
-        padding-left: 2rem;
+        .barraprincipalcontent {
+            width: 100%;
+            justify-items: center;
+
+            .name {
+                padding-left: 2rem;
+
+                .titulo {
+                    h1 {
+                        padding-left: 2rem;
+                    }
+
+                    h2 {
+                        padding-left: 2rem;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            .mainnav {
+                margin-top: 3rem;
+            }
+        }
+    }
+
+    .jobox1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "izquierda"
+            "derecha"
+        ;
+    }
+
+    .jowarning1 {
+        width: 100%;
+
+        p {
+            width: 90%;
+        }
+    }
+
+    .jobox {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "izquierda"
+            "derecha"
+        ;
+    }
+
+    .jowarning {
+        width: 100%;
+
+        p {
+            width: 90%;
+        }
+    }
+
+    .jowarning2 {
+        width: 100%;
+
+        p {
+            width: 90%;
+        }
     }
 
     .trialsbox {
+        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "derecha"
-        "izquierda" 
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "derecha"
+            "izquierda"
         ;
     }
-    
-    .barraprincipal .name {
-        padding-bottom: 2rem;
-        padding-right: 5rem;
+
+    .rightjuicios {
+        .boss {
+            padding: 0;
+            margin: 0;
+        }
     }
 
-    .f1 {
-        padding-right: 2rem;
+    .members {
+        flex-wrap: wrap;
     }
 
-    .mainleft {
-        grid-area: izquierda;
-        padding-left: 8rem;
-        padding-top: 20rem;
-        
+    .contactgrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "derecha"
+            "izquierda"
+        ;
+    }
+
+    .contactcontain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pfooters {
+        width: 100%;
     }
 }
 
-/* tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .mainpage {
+        .maingrid {
+            display: grid;
+            margin-top: 3rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "izquierda"
+                "derecha"
+            ;
+
+            .mainleft {
+                .carousel-item {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .mainright {
+                margin-top: 3rem;
+                padding: 0;
+            }
+        }
+    }
+
+    .encabezado {
+        .encabezadocontent {
+            width: 100%;
+        }
+    }
+
+    .barraprincipal {
+        .barraprincipalcontent {
+            width: 100%;
+            justify-items: center;
+
+            .name {
+                padding-left: 2rem;
+
+                .titulo {
+                    h1 {
+                        padding-left: 2rem;
+                    }
+
+                    h2 {
+                        padding-left: 2rem;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            .mainnav {
+                margin-top: 3rem;
+            }
+        }
+    }
+    .jobox1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "izquierda"
+        "derecha"
+        ;
+    }
+    .jobox {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "izquierda"
+        "derecha"
+        ;
+    }
+
 
     .trialsbox {
+        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "derecha"
-        "izquierda" 
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "derecha"
+            "izquierda"
+        ;
+    }
+
+    .rightjuicios {
+        .boss {
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .members {
+        flex-wrap: wrap;
+    }
+
+    .contactgrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "derecha"
+            "izquierda"
+        ;
+    }
+
+    .contactcontain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pfooters {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mainpage {
+        .maingrid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+                "izquierda derecha"
+            ;
+            margin-top: 10rem;
+
+            .mainleft {
+                .carousel-item {
+                    img {
+                        width: 45rem;
+                    }
+                }
+            }
+
+            .mainright {
+                padding-right: 9rem;
+            }
+        }
+    }
+
+    .jobox1 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "izquierda derecha"
+        ;
+    }
+
+    .jobox {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "izquierda derecha"
+        ;
+    }
+
+    .trialsbox {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "izquierda derecha"
+        ;
+    }
+
+    .contactgrid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "izquierda derecha"
         ;
     }
 }

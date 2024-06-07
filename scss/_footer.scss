@@ -1,24 +1,17 @@
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    bottom: 0%;
+    margin-top: auto;
     width: 100%;
-    padding: 0.3rem;
+    padding: 0.5rem;
     background-color: #3a3a3a;
     color: white;
-    font-size: 1rem;
-    bottom: 0%;
-    position:relative;
-            .f1 {
-            padding-right : 51rem;
-        }
-            .f2 {
-            padding-right: 8rem;
+    .pfooters{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1rem;
+        width: 80%;
+        p{
+            margin: 0;
         }
     }
-    .contactfooter{
-        position: fixed;
-        bottom: 0%;
-    }
-
+}

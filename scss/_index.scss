@@ -7,15 +7,8 @@
     background-size: cover;
     .maingrid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "izquierda derecha"
-        ;
         .mainleft {
             grid-area: izquierda;
-            padding-left: 3rem;
-            padding-top: 5rem;
         }
         .mainright {
             grid-area: derecha;
@@ -23,14 +16,12 @@
             flex-direction: column;
             text-align: center;
             font-size: 2rem;
-            margin-right: 25%;
-            padding-top: 10rem;
             color: white;
             h2 {
-                padding-bottom: 4rem;
+                margin-bottom: 4rem;
             }
             .mainwarning {
-                padding-top: 5rem;
+                margin-top: 5rem;
                 color: orangered;
                 a {
                     text-decoration: none;

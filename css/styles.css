@@ -1,69 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap");
 * {
   padding: 0;
   margin: 0 auto;
   width: auto;
 }
 
-/* MOBILE */
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  P {
-    color: red;
-  }
-  .mainright {
-    color: red;
-  }
-  .mainwarning a {
-    color: orangered;
-  }
-  .mainnav a {
-    color: red;
-  }
-  .mainnav ul li {
-    padding: 0.5rem;
-  }
-  .barraprincipal {
-    padding-left: 2rem;
-  }
-  .trialsbox {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "derecha" "izquierda";
-  }
-  .barraprincipal .name {
-    padding-bottom: 2rem;
-    padding-right: 5rem;
-  }
-  .f1 {
-    padding-right: 2rem;
-  }
-  .mainleft {
-    grid-area: izquierda;
-    padding-left: 8rem;
-    padding-top: 20rem;
-  }
-}
-/* tablet */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .trialsbox {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "derecha" "izquierda";
-  }
-}
 .contacto {
   background-color: black;
 }
 
-iframe {
+.iframe {
   width: 100%;
-  height: 10%;
+  height: 20rem;
+}
+.iframe iframe {
+  width: 100%;
 }
 
 .contactgrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "izquierda derecha";
+  background-color: black;
+  color: white;
+  padding-top: 3rem;
 }
 .contactgrid .contactform {
   width: 80%;
@@ -86,24 +44,34 @@ iframe {
   padding: 0.4rem;
   width: 25rem;
 }
-.contactgrid .contact1 .contact2 .contact3 {
+.contactgrid .contact1 .contact3 {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
-.contactgrid .contact1 .contact2 .contact3 .textarea {
-  width: 85%;
+.contactgrid .contact1 .contact3 textarea {
+  width: 100%;
 }
-.contactgrid .contact1 .contact2 .contact3 .contact4 {
+.contactgrid .contact1 .contact4 {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
 }
-.contactgrid .contact1 .contact2 .contact3 .contact4 .contact4 input {
+.contactgrid .contact1 .contact4 input {
   width: 1rem;
-  margin: 0 50px;
 }
-.contactgrid .contact1 .contact2 .contact3 .contact4 .contact4 input .contact4 label {
-  margin: 50%;
+.contactgrid .contact1 .contact4 label {
+  margin: 0;
+}
+.contactgrid .contact1 .buttom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.contactgrid .contact1 .buttom input {
+  padding: 0.5rem;
+  border-radius: 20%;
 }
 
 .mainpage {
@@ -116,14 +84,9 @@ iframe {
 }
 .mainpage .maingrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "izquierda derecha";
 }
 .mainpage .maingrid .mainleft {
   grid-area: izquierda;
-  padding-left: 3rem;
-  padding-top: 5rem;
 }
 .mainpage .maingrid .mainright {
   grid-area: derecha;
@@ -131,15 +94,13 @@ iframe {
   flex-direction: column;
   text-align: center;
   font-size: 2rem;
-  margin-right: 25%;
-  padding-top: 10rem;
   color: white;
 }
 .mainpage .maingrid .mainright h2 {
-  padding-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 .mainpage .maingrid .mainright .mainwarning {
-  padding-top: 5rem;
+  margin-top: 5rem;
   color: orangered;
 }
 .mainpage .maingrid .mainright .mainwarning a {
@@ -157,57 +118,56 @@ iframe {
   background-size: 100% 100%;
 }
 
-.jobox {
+.jobox1 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "izquierda derecha";
   color: white;
 }
-.jobox .joleft {
+.jobox1 .joleft1 {
   grid-area: izquierda;
   padding-top: 6rem;
   width: 80%;
 }
-.jobox .joleft h2 {
+.jobox1 .joleft1 h2 {
   text-align: center;
   font-size: 2rem;
   padding-bottom: 3.5rem;
 }
-.jobox .joleft p {
+.jobox1 .joleft1 p {
   text-align: center;
   font-size: 1.5rem;
   padding-bottom: 3rem;
 }
-.jobox .joright {
+.jobox1 .joright1 {
   grid-area: derecha;
   padding-top: 7rem;
   width: 80%;
 }
-.jobox .joright h3 {
+.jobox1 .joright1 h3 {
   text-align: center;
   font-size: 2rem;
   padding-bottom: 3.5rem;
 }
-.jobox .joright ul {
+.jobox1 .joright1 ul {
   text-align: center;
   font-size: 1.5rem;
   padding-bottom: 7rem;
 }
-.jobox .joright p {
+.jobox1 .joright1 p {
   text-align: center;
   font-size: 2rem;
   color: white;
   padding-bottom: 1rem;
 }
 
-.jowarning p {
+.jowarning1 {
+  margin-bottom: 2rem;
+}
+.jowarning1 p {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: orangered;
-  padding-top: 10rem;
-  padding-bottom: 7.5rem;
   width: 50%;
+  text-shadow: 1px 1px 1px black;
 }
 
 .aboutus {
@@ -221,9 +181,6 @@ iframe {
 
 .trialsbox {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "izquierda derecha";
 }
 .trialsbox .leftjuicios {
   grid-area: izquierda;
@@ -242,6 +199,9 @@ iframe {
   grid-area: derecha;
 }
 .trialsbox .rightjuicios .boss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 8rem;
   color: orangered;
   text-align: center;
@@ -264,20 +224,17 @@ iframe {
 
 .jobox {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "izquierda derecha";
   color: white;
+  margin-top: 5rem;
 }
 .jobox .joleft {
   grid-area: izquierda;
-  padding-top: 6rem;
   width: 80%;
 }
 .jobox .joleft h2 {
   text-align: center;
   font-size: 2rem;
-  padding-bottom: 3.5rem;
+  margin-bottom: 3.5rem;
   text-decoration: none;
   color: white;
   text-shadow: 0 0 5px black;
@@ -287,18 +244,16 @@ iframe {
   text-shadow: 0 0 5px black;
   text-align: center;
   font-size: 1.5rem;
-  padding-bottom: 3.5rem;
+  margin-bottom: 3.5rem;
 }
 .jobox .joleft p {
   color: white;
   text-shadow: 0 0 5px black;
   text-align: center;
   font-size: 1.5rem;
-  padding-bottom: 3rem;
 }
 .jobox .joright {
   grid-area: derecha;
-  padding-top: 7rem;
   width: 80%;
 }
 .jobox .joright h2 {
@@ -306,133 +261,344 @@ iframe {
   text-shadow: 0 0 5px black;
   text-align: center;
   font-size: 2rem;
-  padding-bottom: 3.5rem;
+  margin-bottom: 3.5rem;
 }
 .jobox .joright h3 {
   color: white;
   text-shadow: 0 0 5px black;
   text-align: center;
   font-size: 1.5rem;
-  padding-bottom: 3.5rem;
-}
-.jobox .joright ul {
-  color: white;
-  text-shadow: 0 0 5px black;
-  text-align: center;
-  font-size: 1.5rem;
-  padding-bottom: 7rem;
+  margin-bottom: 3.5rem;
 }
 .jobox .joright p {
   color: white;
   text-shadow: 0 0 5px black;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
-  padding-bottom: 1rem;
 }
 
+.jowarning {
+  margin-top: 6rem;
+}
 .jowarning p {
   text-align: center;
   font-size: 1.5rem;
   color: orangered;
-  padding-top: 10rem;
-  padding-bottom: 7.5rem;
+  text-shadow: 1px 1px 1px black;
   width: 50%;
 }
 
+.jowarning2 {
+  margin: 3rem 0;
+}
+.jowarning2 p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: orangered;
+  text-shadow: 1px 1px 1px black;
+  width: 50%;
+}
+
+header {
+  width: 100%;
+}
+
 .encabezado {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin: 0%;
-  padding: 1rem;
   background-color: #3a3a3a;
   color: white;
   font-size: 1rem;
+  width: 100%;
 }
-.encabezado p {
-  margin: 0;
-  padding-right: 16.5rem;
-  padding-left: 8.5rem;
+.encabezado .encabezadocontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  padding: 0.5rem;
+}
+.encabezado .encabezadocontent p {
+  margin: 0%;
 }
 .encabezado .tlf {
   color: orangered;
 }
 
-.barraprincipal {
+.barraprincipal .barraprincipalcontent {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
 }
-.barraprincipal .name {
+.barraprincipal .barraprincipalcontent .name {
   margin: 0;
-  padding-right: 30rem;
   display: flex;
 }
-.barraprincipal .name img {
+.barraprincipal .barraprincipalcontent .name img {
   height: 8rem;
   margin: 0;
 }
-.barraprincipal .name .titulo {
+.barraprincipal .barraprincipalcontent .name .titulo {
+  font-family: "STIX Two Text", serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.barraprincipal .name a {
+.barraprincipal .barraprincipalcontent .name a {
   text-decoration: none;
   color: white;
   text-shadow: 0 0 5px black;
 }
-.barraprincipal .mainnav {
+.barraprincipal .barraprincipalcontent .mainnav {
   margin: 0;
   align-self: center;
-  width: 42rem;
-  padding-right: 8rem;
 }
-.barraprincipal .mainnav ul {
+.barraprincipal .barraprincipalcontent .mainnav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
 }
-.barraprincipal .mainnav ul li {
-  padding-right: 3rem;
+.barraprincipal .barraprincipalcontent .mainnav ul li {
+  margin: 0 1rem;
 }
-.barraprincipal .mainnav ul li a {
+.barraprincipal .barraprincipalcontent .mainnav ul li a {
+  font-family: "STIX Two Text", serif;
   text-decoration: none;
   color: white;
+  font-size: 1.1rem;
 }
-.barraprincipal .mainnav ul .bonificationbox {
+.barraprincipal .barraprincipalcontent .mainnav ul .bonificationbox {
   background-color: orangered;
   padding: 0.7rem;
 }
-.barraprincipal .mainnav ul .bonificationbox .bonification {
+.barraprincipal .barraprincipalcontent .mainnav ul .bonificationbox .bonification {
   margin: 0;
   align-self: center;
   color: white;
 }
 
 footer {
+  margin-top: auto;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #3a3a3a;
+  color: white;
+}
+footer .pfooters {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  bottom: 0%;
-  width: 100%;
-  padding: 0.3rem;
-  background-color: #3a3a3a;
-  color: white;
   font-size: 1rem;
-  bottom: 0%;
-  position: relative;
+  width: 80%;
 }
-footer .f1 {
-  padding-right: 51rem;
-}
-footer .f2 {
-  padding-right: 8rem;
+footer .pfooters p {
+  margin: 0;
 }
 
-.contactfooter {
-  position: fixed;
-  bottom: 0%;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .mainpage .maingrid {
+    display: grid;
+    margin-top: 3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "izquierda" "derecha";
+  }
+  .mainpage .maingrid .mainleft .carousel-item img {
+    width: 100%;
+  }
+  .mainpage .maingrid .mainright {
+    margin-top: 3rem;
+    padding: 0;
+  }
+  .encabezado .encabezadocontent {
+    width: 100%;
+  }
+  .barraprincipal .barraprincipalcontent {
+    width: 100%;
+    justify-items: center;
+  }
+  .barraprincipal .barraprincipalcontent .name {
+    padding-left: 2rem;
+  }
+  .barraprincipal .barraprincipalcontent .name .titulo h1 {
+    padding-left: 2rem;
+  }
+  .barraprincipal .barraprincipalcontent .name .titulo h2 {
+    padding-left: 2rem;
+    font-size: 0.8rem;
+  }
+  .barraprincipal .barraprincipalcontent .mainnav {
+    margin-top: 3rem;
+  }
+  .jobox1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "izquierda" "derecha";
+  }
+  .jowarning1 {
+    width: 100%;
+  }
+  .jowarning1 p {
+    width: 90%;
+  }
+  .jobox {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "izquierda" "derecha";
+  }
+  .jowarning {
+    width: 100%;
+  }
+  .jowarning p {
+    width: 90%;
+  }
+  .jowarning2 {
+    width: 100%;
+  }
+  .jowarning2 p {
+    width: 90%;
+  }
+  .trialsbox {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "derecha" "izquierda";
+  }
+  .rightjuicios .boss {
+    padding: 0;
+    margin: 0;
+  }
+  .members {
+    flex-wrap: wrap;
+  }
+  .contactgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "derecha" "izquierda";
+  }
+  .contactcontain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pfooters {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .mainpage .maingrid {
+    display: grid;
+    margin-top: 3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "izquierda" "derecha";
+  }
+  .mainpage .maingrid .mainleft .carousel-item img {
+    width: 100%;
+  }
+  .mainpage .maingrid .mainright {
+    margin-top: 3rem;
+    padding: 0;
+  }
+  .encabezado .encabezadocontent {
+    width: 100%;
+  }
+  .barraprincipal .barraprincipalcontent {
+    width: 100%;
+    justify-items: center;
+  }
+  .barraprincipal .barraprincipalcontent .name {
+    padding-left: 2rem;
+  }
+  .barraprincipal .barraprincipalcontent .name .titulo h1 {
+    padding-left: 2rem;
+  }
+  .barraprincipal .barraprincipalcontent .name .titulo h2 {
+    padding-left: 2rem;
+    font-size: 0.8rem;
+  }
+  .barraprincipal .barraprincipalcontent .mainnav {
+    margin-top: 3rem;
+  }
+  .jobox1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "izquierda" "derecha";
+  }
+  .jobox {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "izquierda" "derecha";
+  }
+  .trialsbox {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "derecha" "izquierda";
+  }
+  .rightjuicios .boss {
+    padding: 0;
+    margin: 0;
+  }
+  .members {
+    flex-wrap: wrap;
+  }
+  .contactgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "derecha" "izquierda";
+  }
+  .contactcontain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pfooters {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mainpage .maingrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "izquierda derecha";
+    margin-top: 10rem;
+  }
+  .mainpage .maingrid .mainleft .carousel-item img {
+    width: 45rem;
+  }
+  .mainpage .maingrid .mainright {
+    padding-right: 9rem;
+  }
+  .jobox1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "izquierda derecha";
+  }
+  .jobox {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "izquierda derecha";
+  }
+  .trialsbox {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "izquierda derecha";
+  }
+  .contactgrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "izquierda derecha";
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }/*# sourceMappingURL=styles.css.map */
